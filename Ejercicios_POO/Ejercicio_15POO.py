@@ -48,8 +48,8 @@ class Escuela():
 
         for curso in self.__lista_de_cursos:
             curso.info()
-            curso.mostar_estudiante()
-            print
+            curso.mostrar_estudiante()
+            print()
 
 e1 = Estudiante("Danilo", 17)
 e2 = Estudiante("Sara", 17)
