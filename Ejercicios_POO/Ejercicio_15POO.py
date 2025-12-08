@@ -13,7 +13,10 @@ class Curso():
     
     def agregar_estudiante(self, estudiante):
         self.__lista_de_estudiantes.append(estudiante)
-    
+
+    def info(self):
+        print(f"Curso: {self.__nombre_del_curso}")
+
     def mostrar_estudiante(self):
         if len(self.__lista_de_estudiantes) == 0 :
             print("No hay Estudiantes")
@@ -38,4 +41,24 @@ class Escuela():
         for curso in self.__lista_de_cursos:
             curso.info()
         
-    def mostrar_todo(self)
+    def mostrar_todo(self):
+        if len(self.__lista_de_cursos) == 0 :
+            print("No hay Cursos")
+            return
+
+        for curso in self.__lista_de_cursos:
+            curso.info()
+            curso.mostar_estudiante()
+            print
+
+e1 = Estudiante("Danilo", 17)
+e2 = Estudiante("Sara", 17)
+
+curso1 = Curso("Matemáticas")
+curso1.agregar_estudiante(e1)
+curso1.agregar_estudiante(e2)
+
+escuela = Escuela("Campus Code")
+escuela.agregar_curso(curso1)
+
+escuela.mostrar_todo()
