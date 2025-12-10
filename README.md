@@ -1,23 +1,5 @@
 🌟 Python POO & Métodos Especiales — Mi Camino como Programador
 <p align="center"> <img src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png" width="120"> </p> <p align="center"> Un repositorio donde documento todo lo que estoy aprendiendo sobre Programación Orientada a Objetos y los métodos especiales de Python. </p>
-📁 Contenido del Proyecto
-📁 CHATGPT/
- └── 📁 Aprendiendo/
-      └── 📁 MetodosEspeciales/
-           ├── POO.py
-           ├── POO2.py
-           ├── POO3.py
-           ├── MetodosEspeciales__getitem__.py
-           ├── MetodosEspeciales__len__.py
-           ├── MetodosEspeciales__repr__&_str__.py
-           └── README.md
-
-📁 Ejercicios_CHATGPT_POO/
-    ├── Ejercicio_1POO.py
-    ├── Ejercicio_2POO.py
-    ├── ...
-    └── Ejercicio_15POO.py
-
 🎯 Objetivo del Repositorio
 
 Convertirme en un programador sólido en Python
