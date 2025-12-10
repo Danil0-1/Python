@@ -1,5 +1,7 @@
 🌟 Python POO & Métodos Especiales — Mi Camino como Programador
+
 <p align="center"> <img src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png" width="120"> </p> <p align="center"> <b>Un repositorio donde documento todo lo que estoy aprendiendo sobre Programación Orientada a Objetos y los métodos especiales de Python.</b> </p>
+
 📚 Contenido del Proyecto
 📁 CHATGPT/
  └── 📁 Aprendiendo/
@@ -47,10 +49,10 @@ Organización de proyectos en Python
 
 ⚙️ Métodos Especiales Dominados
 Método	Descripción	Ejemplo
-__str__	Representación amigable para el usuario	print(obj)
-__repr__	Representación técnica para depuración	repr(obj)
-__len__	Permite usar len(obj)	len(lista)
-__getitem__	Acceso con obj[index]	obj[0]
+__str__	 =Representación amigable para el usuario	print(obj)
+__repr__ =	Representación técnica para depuración	repr(obj)
+__len__	 =Permite usar len(obj)	len(lista)
+__getitem__	 = Acceso con obj[index]	obj[0]
 
 📌 Este repositorio incluye más de 15 ejercicios aplicados, desde listas de tareas hasta inventarios y bibliotecas.
 
