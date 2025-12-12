@@ -59,3 +59,56 @@ lt.agregar_tareas("Salir a caminar")
 lt.mostrar()
 del lt[2]
 lt.mostrar()
+
+# Ejercicio 2 
+
+class RegistroEstudiantes:
+    def __init__(self):
+        self.__estudiantes = []
+
+    def agregar_estudiante(self, nombre, edad, grado):
+        self.__estudiantes.append({"nombre": nombre, "edad": edad, "grado": grado})
+
+    def __delitem__(self, index):
+        print(f"Se elimino el estudiante : {self.__estudiantes[index]['nombre']}")
+        del self.__estudiantes[index]
+    
+    def mostrar(self):
+        print("Estudiantes: ")
+        for i, e in enumerate(self.__estudiantes, start =1):
+            print(f"{i}. {e['nombre']} - {e['edad']} - {e['grado']}")
+
+r = RegistroEstudiantes()
+r.agregar_estudiante("Sara", 17, "11A")
+r.agregar_estudiante("Danilo", 17, "11B")
+r.mostrar()
+
+del r[0]
+r.mostrar()
+
+# Ejercicio 3
+
+class CarritoCompras:
+    def __init__(self):
+        self.__productos= []
+
+    def agregar_producto(self, nombre, precio , cantidad):
+        self.__productos.append({"nombre": nombre, "precio": precio, "cantidad": cantidad})
+    
+    
+    def mostrar(self,):
+        print("Productos :")
+        for i , p in enumerate(self.__productos, start =1):
+            multiplicacion = p['precio'] * p['cantidad']
+            print(f"{i}. {p['nombre']} - {p['precio']} x {p['cantidad']} = {multiplicacion} ")
+        
+    def __delitem__(self, index):
+        print(f"Se elimino el producto : {self.__productos[index]['nombre']}")
+        del self.__productos[index]
+    
+cc = CarritoCompras()
+cc.agregar_producto("Pan", 1000, 2)
+cc.agregar_producto("Pan ochon", 2000, 2)
+cc.mostrar()
+del cc[0]
+cc.mostrar()
