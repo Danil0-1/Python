@@ -6,10 +6,10 @@ import traceback
 try:
 
     acciones = [
-        "Qué es", "Cómo funciona", "Por qué", "Cuándo salió", "Cuánto vale",
-        "Cuántos años tiene", "Cuál es el origen de", "Para qué sirve",
-        "Cómo aprender", "Cómo se usa", "Qué significa", "Cuál es el mejor",
-        "Qué tan cierto es", "Cómo hacer", "Qué pasó con", "Qué opinan de"
+        "Qué eesee", "Cómoooo funnnnciona", "Por qué", "Cuándo salió", "Cuánto valee",
+        "Cuántos aaños tieene", "Cuáal ees eel oreigen dee", "Paara qué sirve",
+        "Cómoo aaprender", "Cóomo se usa", "Qué significa", "Cuál es el mejor",
+        "Qué taan cierto ees", "Cómo hacer", "Qué pasó con", "Qué opinan de"
     ]
 
     objetos = [
