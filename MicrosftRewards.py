@@ -2,9 +2,18 @@ import pyautogui
 import time
 import random
 import traceback
+from pynput import mouse
+
+detener = False
+
+def on_click(x, y, button, pressed):
+    global detener
+    if pressed:
+        print("Click detectado")
+        detener = True
+        return False  
 
 try:
-
     acciones = [
         "Qué eesee", "Cómoooo funnnnciona", "Por qué", "Cuándo salió", "Cuánto valee",
         "Cuántos aaños tieene", "Cuáal ees eel oreigen dee", "Paara qué sirve",
@@ -37,10 +46,18 @@ try:
 
     repeticiones = 1000
 
-    print("Listo. Abre Edge, ponlo delante y NO cambies de ventana.\n")
+    print("Listo. Abre Edge y NO cambies de ventana.")
+    print("Haz CLICK en cualquier parte para detener el script.\n")
+
+    listener = mouse.Listener(on_click=on_click)
+    listener.start()
+
     time.sleep(2)
 
     for i in range(repeticiones):
+        if detener:
+            break
+
         print(f"Búsqueda {i+1}/{repeticiones}")
 
         abrir_nueva_pestaña()
@@ -51,6 +68,8 @@ try:
         time.sleep(random.randint(2, 3))
 
         cerrar_pestaña()
+
+    print("Script finalizado correctamente.")
 
 except Exception:
     traceback.print_exc()
